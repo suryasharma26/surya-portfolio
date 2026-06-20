@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Surya Sharma | Aditya Business School - Digital Marketing Student</title>
+<meta name="description" content="Surya Sharma — First year Digital Marketing student at Aditya Business School, Section C. Reader, library regular, currently reading 'Can We Be Strangers Again?' by Shrijeet Shandilya." />
+<meta name="keywords" content="Surya Sharma, Aditya Business School, Digital Marketing student, Section C, Can We Be Strangers Again, Shrijeet Shandilya" />
+<meta name="author" content="Surya Sharma" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph (how the link looks when shared on WhatsApp/social) -->
+<meta property="og:title" content="Surya Sharma | Aditya Business School" />
+<meta property="og:description" content="First year Digital Marketing student at Aditya Business School, Section C. Reader and library regular." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FFF8EE;
+    --ink:#241934;
+    --maroon:#E0457B;
+    --maroon-deep:#5B2A86;
+    --gold:#F2A93B;
+    --teal:#1E9E8B;
+    --blue:#3B6BD9;
+    --line:#E9D9C9;
+    --card:#FFFDFA;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Source Sans 3', sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  ::selection{ background:var(--gold); color:var(--paper); }
+
+  .wrap{
+    max-width:880px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  /* ---------- Top ribbon ---------- */
+  .ribbon{
+    background:linear-gradient(90deg, var(--maroon-deep), var(--maroon), var(--gold));
+    color:#fff;
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    padding:9px 0;
+    text-align:center;
+  }
+
+  /* ---------- Hero ---------- */
+  header.hero{
+    padding:64px 0 48px;
+    border-bottom:1px solid var(--line);
+    position:relative;
+    background:linear-gradient(160deg, #FFF1DC 0%, #FFF8EE 45%, #F4E9FB 100%);
+  }
+
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+    color:var(--maroon);
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    margin-bottom:18px;
+  }
+
+  .eyebrow::before{
+    content:"§ ";
+  }
+
+  h1.name{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:clamp(40px, 8vw, 72px);
+    line-height:1.02;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+  }
+
+  .name em{
+    font-style:italic;
+    color:var(--maroon);
+    font-weight:600;
+  }
+
+  .tagline{
+    margin-top:18px;
+    font-size:19px;
+    color:#473C2C;
+    max-width:520px;
+  }
+
+  .hero-meta{
+    margin-top:28px;
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+    font-family:'JetBrains Mono', monospace;
+    font-size:12.5px;
+    color:#6B5E47;
+  }
+
+  .hero-meta span{ color: var(--maroon); font-weight:600; }
+  .hero-meta div:nth-child(2) span{ color: var(--teal); }
+  .hero-meta div:nth-child(3) span{ color: var(--blue); }
+
+  /* ---------- Section heading style ---------- */
+  .section{
+    padding:52px 0;
+    border-bottom:1px solid var(--line);
+  }
+
+  .section:last-of-type{ border-bottom:none; }
+
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    margin-bottom:28px;
+  }
+
+  .section-num{
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+    color:var(--gold);
+    background:rgba(242,169,59,0.15);
+    padding:3px 9px;
+    border-radius:20px;
+  }
+
+  .section:nth-of-type(1) .section-num{ color:var(--maroon); background:rgba(224,69,123,0.13); }
+  .section:nth-of-type(2) .section-num{ color:var(--blue); background:rgba(59,107,217,0.13); }
+  .section:nth-of-type(3) .section-num{ color:var(--teal); background:rgba(30,158,139,0.13); }
+  .section:nth-of-type(4) .section-num{ color:var(--gold); background:rgba(242,169,59,0.18); }
+
+  .section-title{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:28px;
+    color:var(--maroon-deep);
+  }
+
+  /* ---------- ID Card ---------- */
+  .id-card{
+    background:linear-gradient(135deg, var(--card), #FFF4E8);
+    border:1px solid var(--line);
+    border-left:5px solid var(--maroon);
+    border-radius:6px;
+    padding:28px 30px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px 28px;
+    box-shadow:0 8px 24px rgba(91,42,134,0.07);
+  }
+
+  .id-row dt{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--gold);
+    margin-bottom:4px;
+  }
+
+  .id-row:nth-child(2) dt{ color:var(--maroon); }
+  .id-row:nth-child(3) dt{ color:var(--teal); }
+  .id-row:nth-child(4) dt{ color:var(--blue); }
+  .id-row:nth-child(5) dt{ color:var(--maroon-deep); }
+  .id-row:nth-child(6) dt{ color:var(--teal); }
+  .id-row:nth-child(7) dt{ color:var(--maroon); }
+
+  .id-row dd{
+    font-size:17px;
+    font-weight:600;
+    color:var(--ink);
+  }
+
+  /* ---------- About paragraph ---------- */
+  .about-text{
+    font-size:17px;
+    max-width:620px;
+    color:#3B3022;
+  }
+
+  .about-text + .about-text{ margin-top:14px; }
+
+  /* ---------- Hobbies / library card ---------- */
+  .shelf{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:18px;
+  }
+
+  .shelf-item{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:22px;
+    border-top:4px solid var(--teal);
+    box-shadow:0 6px 18px rgba(30,158,139,0.08);
+  }
+
+  .shelf-item:nth-child(2){
+    border-top:4px solid var(--blue);
+    box-shadow:0 6px 18px rgba(59,107,217,0.08);
+  }
+
+  .shelf-item h3{
+    font-family:'Fraunces', serif;
+    font-size:19px;
+    font-weight:600;
+    color:var(--maroon-deep);
+    margin-bottom:8px;
+  }
+
+  .shelf-item p{
+    font-size:15px;
+    color:#5A4D38;
+  }
+
+  /* ---------- Book feature (signature element) ---------- */
+  .book-feature{
+    background:linear-gradient(135deg, var(--maroon-deep) 0%, var(--maroon) 55%, var(--gold) 130%);
+    color:#fff;
+    border-radius:8px;
+    padding:36px 32px;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 14px 32px rgba(91,42,134,0.25);
+  }
+
+  .book-feature::before{
+    content:"”";
+    position:absolute;
+    top:-30px;
+    right:18px;
+    font-family:'Fraunces', serif;
+    font-size:180px;
+    color:rgba(243,238,226,0.06);
+    line-height:1;
+  }
+
+  .book-tag{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:#FFE8B8;
+    margin-bottom:14px;
+  }
+
+  .book-title{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-weight:600;
+    font-size:clamp(24px, 4vw, 32px);
+    line-height:1.2;
+    max-width:480px;
+  }
+
+  .book-author{
+    margin-top:10px;
+    font-size:15px;
+    color:#D8C9A3;
+  }
+
+  .book-note{
+    margin-top:18px;
+    font-size:15px;
+    max-width:480px;
+    color:#E9E2CF;
+  }
+
+  /* ---------- Footer ---------- */
+  footer{
+    padding:36px 0 60px;
+    text-align:center;
+    background:linear-gradient(180deg, transparent, rgba(91,42,134,0.05));
+  }
+
+  footer p{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    color:#8A7B5E;
+    letter-spacing:0.04em;
+  }
+
+  /* ---------- Mobile ---------- */
+  @media (max-width:600px){
+    header.hero{ padding:44px 0 36px; }
+    .section{ padding:38px 0; }
+    .id-card{ grid-template-columns:1fr; padding:22px; }
+    .shelf{ grid-template-columns:1fr; }
+    .hero-meta{ gap:14px; }
+    .book-feature{ padding:28px 22px; }
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    *{ scroll-behavior:auto !important; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="ribbon">Aditya Business School &nbsp;·&nbsp; Year 1 &nbsp;·&nbsp; Section C &nbsp;·&nbsp; Digital Marketing</div>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Welcome to my page</div>
+      <h1 class="name">I am <em>Surya Sharma</em></h1>
+      <p class="tagline">First-year Digital Marketing student, reader, and a regular at the library between classes.</p>
+      <div class="hero-meta">
+        <div>SUC Code <span>2556860088</span></div>
+        <div>Roll No <span>26</span></div>
+        <div>Section <span>C</span></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <span class="section-title">About Me</span>
+      </div>
+      <p class="about-text">I'm a first-year student at Aditya Business School, studying Digital Marketing. I'm still early in this journey, but I'm enjoying learning how brands think, how markets move, and how ideas get noticed online.</p>
+      <p class="about-text">Outside of class, I spend a lot of my time reading — usually at the library, which has quietly become my favourite place on campus.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <span class="section-title">Student Details</span>
+      </div>
+      <dl class="id-card">
+        <div class="id-row"><dt>Name</dt><dd>Surya Sharma</dd></div>
+        <div class="id-row"><dt>College</dt><dd>Aditya Business School</dd></div>
+        <div class="id-row"><dt>Year</dt><dd>First Year</dd></div>
+        <div class="id-row"><dt>Section</dt><dd>C</dd></div>
+        <div class="id-row"><dt>Course</dt><dd>Digital Marketing</dd></div>
+        <div class="id-row"><dt>SUC Code ID</dt><dd>2556860088</dd></div>
+        <div class="id-row"><dt>Roll No</dt><dd>26</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <span class="section-title">Hobbies & Interests</span>
+      </div>
+      <div class="shelf">
+        <div class="shelf-item">
+          <h3>Reading Books</h3>
+          <p>Fiction mostly — stories about people, choices, and the small moments that change everything.</p>
+        </div>
+        <div class="shelf-item">
+          <h3>Library Hours</h3>
+          <p>Most afternoons you'll find me at the college library, between two stacks, completely unreachable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <span class="section-title">Currently Reading</span>
+      </div>
+      <div class="book-feature">
+        <div class="book-tag">From my shelf</div>
+        <div class="book-title">Can We Be Strangers Again?</div>
+        <div class="book-author">— Shrijeet Shandilya</div>
+        <p class="book-note">One of the most personal books I've picked up this year — quiet, honest, and the kind of story that stays with you long after the last page.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>Made by Surya Sharma &nbsp;·&nbsp; Aditya Business School &nbsp;·&nbsp; Section C</p>
+    </div>
+  </footer>
+
+</body>
+</html>
